@@ -17,11 +17,10 @@ export default function CitizenDetail(props) {
 
     return (
         <div>
-        <div class="card2">
-            
+        <div className="card2">
           
             <h1>{citizen.name}</h1>
-            <p class="title">Age: {citizen.age}</p>
+            <p className="title">Age: {citizen.age}</p>
             <img src={citizen.thumbnail} alt="citizen" id="cardImage" ></img>
             <p><h4>Weight:</h4> {citizen.weight}</p>
             <p><h4>Height: </h4>{citizen.height}</p>
@@ -35,9 +34,9 @@ export default function CitizenDetail(props) {
             })} </p>
             <div className = "socialIcons">
             <a href="#"><i class="fa fa-dribbble"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i className="fa fa-twitter"></i></a>
+  <a href="#"><i className="fa fa-linkedin"></i></a>
+  <a href="#"><i className="fa fa-facebook"></i></a>
   </div>
   <p><button>Contact</button></p>
             </div>

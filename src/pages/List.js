@@ -34,7 +34,7 @@ export default function List() {
         <div>
       
 
-        <form class="search-bar">
+        <form className="search-bar">
             <input type="text" name="text" placeholder="Search by Name" value={filter} onChange={handleChange}></input>
            
          </form>
