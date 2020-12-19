@@ -17,19 +17,30 @@ export default function CitizenDetail(props) {
 
     return (
         <div>
-            <h3>{citizen.name}</h3>
-            <img src={citizen.thumbnail} alt="citizen"></img>
-            <p>Age: {citizen.age}</p>
-            <p>Weight: {citizen.weight}</p>
-            <p>Height: {citizen.height}</p>
-            <p>Hair Color: {citizen.hair_color}</p>
-            <p>Profesions: <br></br>    {citizen.professions && citizen.professions.map((ele,index) => {
+        <div class="card2">
+            
+          
+            <h1>{citizen.name}</h1>
+            <p class="title">Age: {citizen.age}</p>
+            <img src={citizen.thumbnail} alt="citizen" id="cardImage" ></img>
+            <p><h4>Weight:</h4> {citizen.weight}</p>
+            <p><h4>Height: </h4>{citizen.height}</p>
+            <p><h4>Hair Color:</h4> {citizen.hair_color}</p>
+            <p><h5>Profesions:</h5>     {citizen.professions && citizen.professions.map((ele,index) => {
                 return <span key={index}>{ele} <br></br></span>
             })} </p>
         
-            <p>Friends: <br></br>  {citizen.friends && citizen.friends.map((ele,index) => {
+            <p><h5>Friends:</h5>   {citizen.friends && citizen.friends.map((ele,index) => {
                 return <span key={index}>{ele} <br></br></span> 
             })} </p>
+            <div className = "socialIcons">
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  </div>
+  <p><button>Contact</button></p>
+            </div>
         </div>
     )
 }

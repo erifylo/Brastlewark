@@ -32,12 +32,18 @@ export default function List() {
 
     return (
         <div>
-        <form>
+      
+
+        <form class="search-bar">
             <input type="text" name="text" placeholder="Search by Name" value={filter} onChange={handleChange}></input>
+           
          </form>
+        
             {listOfCitizens.map((ele,index) => {
                 return<CitizenCard key={index}{...ele}></CitizenCard>
+              
             })}
+          
         </div>
     )
 }
